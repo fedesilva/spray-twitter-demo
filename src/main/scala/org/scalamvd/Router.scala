@@ -1,16 +1,15 @@
 package org.scalamvd
 
-import akka.actor.Actor
 import spray.routing._
 
 // we don't implement our route structure directly in the router actor because
 // we want to be able to test it independently, without having to spin up an actor
-class Router extends Actor
+class Router extends HttpServiceActor
   with Ping {
 
   // the HttpService trait defines only one abstract member, which
   // connects the services environment to the enclosing actor or test
-  def actorRefFactory = context
+  //def actorRefFactory = context
 
   lazy val route = test
 
