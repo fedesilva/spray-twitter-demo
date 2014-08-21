@@ -1,1 +1,5 @@
 target
+*idea
+idea*
+.idea .idea_modules
+.idea*
