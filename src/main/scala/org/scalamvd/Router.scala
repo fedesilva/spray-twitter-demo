@@ -20,7 +20,6 @@ class Router extends HttpServiceActor
 
 }
 
-
 trait Ping extends HttpService {
   val test =
     path("test"){
