@@ -19,6 +19,7 @@ libraryDependencies ++= {
   Seq(
     "io.spray"            %% "spray-can"                      % sprayV,
     "io.spray"            %% "spray-routing-shapeless2"       % sprayV,
+    "com.typesafe.akka"   %% "akka-actor"                     % akkaV,
     "io.spray"            %% "spray-json"                     % "1.2.6",
     "io.spray"            %% "spray-testkit"                  % sprayV    % "test",
     "com.typesafe.akka"   %% "akka-testkit"                   % akkaV     % "test",
