@@ -1,6 +1,6 @@
 package org.scalamvd
 
-import akka.actor.{Props, ActorSystem}
+import akka.actor.{ActorSystem, Props}
 import akka.io.IO
 import spray.can.Http
 

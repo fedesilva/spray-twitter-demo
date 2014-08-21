@@ -1,9 +1,11 @@
-import org.specs2.mutable.Specification
-import spray.testkit.Specs2RouteTest
-import spray.http._
-import StatusCodes._
+package org.scalamvd
 
-class MyServiceSpec extends Specification with Specs2RouteTest with Service {
+import org.specs2.mutable.Specification
+import spray.http.StatusCodes._
+import spray.http._
+import spray.testkit.Specs2RouteTest
+
+class PingSpec extends Specification with Specs2RouteTest with Ping {
   def actorRefFactory = system
 
   "MyService" should {
